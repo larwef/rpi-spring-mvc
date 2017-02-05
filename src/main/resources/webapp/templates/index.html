@@ -1,0 +1,10 @@
+<!doctype html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" type="text/css" th:href="@{/webapp/css/stylesheet.css}" />
+</head>
+<body>
+    <p th:text="'Hello, ' + ${name} + '!'" />
+    <p th:text="${@timestamp}">Timestamp</p>
+</body>
+</html>
