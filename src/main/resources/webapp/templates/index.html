@@ -1,10 +1,18 @@
 <!doctype html>
 <html xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
+    <meta charset="UTF-8">
+    <title>rpiSpringMvc</title>
+
     <link rel="stylesheet" type="text/css" th:href="@{/webapp/css/stylesheet.css}" />
+    <script type="text/javascript" th:src="@{/webapp/js/script.js}"></script>
 </head>
 <body>
-    <p th:text="'Hello, ' + ${name} + '!'" />
-    <p th:text="${@timestamp}">Timestamp</p>
+<p th:text="'Hello, ' + ${name} + '!'" />
+<div>
+    <button type="button"  onclick="buttonPressFunc()" th:text="'Click me ' + ${name} + '!'">Click Me!</button>
+    <div id="currentTimestamp"></div>
+</div>
+<p th:text="${@timestamp}">Timestamp</p>
 </body>
 </html>
