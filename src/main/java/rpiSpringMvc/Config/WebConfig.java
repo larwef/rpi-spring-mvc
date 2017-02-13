@@ -59,14 +59,4 @@ public class WebConfig extends WebMvcConfigurerAdapter implements ApplicationCon
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/webapp/**").addResourceLocations("classpath:/webapp/");
     }
-
-    @Bean
-    @Scope("request")
-    public String timestamp() {
-        Calendar calendar = Calendar.getInstance();
-        String ts = String.format("%02d:%02d:%02d, %02d/%02d/%4d",
-                calendar.get(Calendar.HOUR), calendar.get(Calendar.MINUTE), calendar.get(Calendar.SECOND),
-                calendar.get(Calendar.DAY_OF_MONTH), calendar.get(Calendar.MONTH)+1, calendar.get(Calendar.YEAR));
-        return "Page generated dynamically at " + ts;
-    }
 }

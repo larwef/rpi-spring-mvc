@@ -5,14 +5,25 @@
     <title>rpiSpringMvc</title>
 
     <link rel="stylesheet" type="text/css" th:href="@{/webapp/css/stylesheet.css}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/webapp/css/button.css}" />
     <script type="text/javascript" th:src="@{/webapp/js/script.js}"></script>
 </head>
 <body>
-<p th:text="'Hello, ' + ${name} + '!'" />
-<div>
-    <button type="button"  onclick="buttonPressFunc()" th:text="'Click me ' + ${name} + '!'">Click Me!</button>
-    <div id="currentTimestamp"></div>
-</div>
-<p th:text="${@timestamp}">Timestamp</p>
+    <div class="outerContainer">
+        <div class="innerContainer">
+            <div class="contentContainer">
+                <button class="button">Button 1</button>
+            </div>
+            <div class="contentContainer">
+                <button class="button">Button 2</button>
+            </div>
+            <div class="contentContainer">
+                <button class="button">Button 3</button>
+            </div>
+            <div class="contentContainer">
+                <button class="button">Button 4</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

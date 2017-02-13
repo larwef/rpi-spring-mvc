@@ -1,4 +1,40 @@
-body {
-    background-color: black;
-    color: white;
+:root {
+    --color-primary-0: #317D8B;
+    --color-primary-1: #80BAC5;
+    --color-primary-2: #4D929F;
+    --color-primary-3: #196E7E;
+    --color-primary-4: #0C5562;
+}
+
+html, body {
+    width: 100%;
+}
+
+.outerContainer {
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    background-color: var(--color-primary-4);
+    width: 100%;
+}
+
+.innerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    -webkit-align-items: center;
+    align-items: center;
+    vertical-align: middle;
+    -webkit-justify-content: center;
+    margin-top: 50px;
+    width: 75%;
+    background-color: #FFFFFF;
+}
+
+.contentContainer {
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    margin: 2px;
 }
