@@ -10,6 +10,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-color: var(--color-primary-1);
+    border-style: solid;
     border-radius: 5px;
     flex: 1 1 auto;
     margin: 2px;

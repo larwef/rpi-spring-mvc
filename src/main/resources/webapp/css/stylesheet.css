@@ -15,11 +15,13 @@ html, body {
     display: flex;
     flex-direction: row;
     height: 35px;
-    margin: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--color-primary-4);
 }
 
 #mainContent {
-
+    margin: 5px;
 }
 
 .outerContainer {
